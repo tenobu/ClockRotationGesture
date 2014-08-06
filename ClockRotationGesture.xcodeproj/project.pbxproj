@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07A302C31991EB0500A7380F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A302C21991EB0500A7380F /* Foundation.framework */; };
+		07A302C51991EB0500A7380F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A302C41991EB0500A7380F /* CoreGraphics.framework */; };
+		07A302C71991EB0500A7380F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A302C61991EB0500A7380F /* UIKit.framework */; };
+		07A302CD1991EB0500A7380F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07A302CB1991EB0500A7380F /* InfoPlist.strings */; };
+		07A302CF1991EB0500A7380F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A302CE1991EB0500A7380F /* main.m */; };
+		07A302D31991EB0500A7380F /* NTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A302D21991EB0500A7380F /* NTAppDelegate.m */; };
+		07A302D61991EB0500A7380F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A302D41991EB0500A7380F /* Main.storyboard */; };
+		07A302D91991EB0500A7380F /* NTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A302D81991EB0500A7380F /* NTViewController.m */; };
+		07A302DB1991EB0500A7380F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A302DA1991EB0500A7380F /* Images.xcassets */; };
+		07A302E21991EB0500A7380F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A302E11991EB0500A7380F /* XCTest.framework */; };
+		07A302E31991EB0500A7380F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A302C21991EB0500A7380F /* Foundation.framework */; };
+		07A302E41991EB0500A7380F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A302C61991EB0500A7380F /* UIKit.framework */; };
+		07A302EC1991EB0500A7380F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07A302EA1991EB0500A7380F /* InfoPlist.strings */; };
+		07A302EE1991EB0500A7380F /* ClockRotationGestureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A302ED1991EB0500A7380F /* ClockRotationGestureTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07A302E51991EB0500A7380F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07A302B71991EB0500A7380F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07A302BE1991EB0500A7380F;
+			remoteInfo = ClockRotationGesture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07A302BF1991EB0500A7380F /* ClockRotationGesture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockRotationGesture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07A302C21991EB0500A7380F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		07A302C41991EB0500A7380F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		07A302C61991EB0500A7380F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		07A302CA1991EB0500A7380F /* ClockRotationGesture-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClockRotationGesture-Info.plist"; sourceTree = "<group>"; };
+		07A302CC1991EB0500A7380F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07A302CE1991EB0500A7380F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07A302D01991EB0500A7380F /* ClockRotationGesture-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockRotationGesture-Prefix.pch"; sourceTree = "<group>"; };
+		07A302D11991EB0500A7380F /* NTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTAppDelegate.h; sourceTree = "<group>"; };
+		07A302D21991EB0500A7380F /* NTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTAppDelegate.m; sourceTree = "<group>"; };
+		07A302D51991EB0500A7380F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07A302D71991EB0500A7380F /* NTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTViewController.h; sourceTree = "<group>"; };
+		07A302D81991EB0500A7380F /* NTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTViewController.m; sourceTree = "<group>"; };
+		07A302DA1991EB0500A7380F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		07A302E01991EB0500A7380F /* ClockRotationGestureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockRotationGestureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07A302E11991EB0500A7380F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		07A302E91991EB0500A7380F /* ClockRotationGestureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClockRotationGestureTests-Info.plist"; sourceTree = "<group>"; };
+		07A302EB1991EB0500A7380F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07A302ED1991EB0500A7380F /* ClockRotationGestureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockRotationGestureTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07A302BC1991EB0500A7380F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A302C51991EB0500A7380F /* CoreGraphics.framework in Frameworks */,
+				07A302C71991EB0500A7380F /* UIKit.framework in Frameworks */,
+				07A302C31991EB0500A7380F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07A302DD1991EB0500A7380F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A302E21991EB0500A7380F /* XCTest.framework in Frameworks */,
+				07A302E41991EB0500A7380F /* UIKit.framework in Frameworks */,
+				07A302E31991EB0500A7380F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07A302B61991EB0500A7380F = {
+			isa = PBXGroup;
+			children = (
+				07A302C81991EB0500A7380F /* ClockRotationGesture */,
+				07A302E71991EB0500A7380F /* ClockRotationGestureTests */,
+				07A302C11991EB0500A7380F /* Frameworks */,
+				07A302C01991EB0500A7380F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07A302C01991EB0500A7380F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07A302BF1991EB0500A7380F /* ClockRotationGesture.app */,
+				07A302E01991EB0500A7380F /* ClockRotationGestureTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07A302C11991EB0500A7380F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07A302C21991EB0500A7380F /* Foundation.framework */,
+				07A302C41991EB0500A7380F /* CoreGraphics.framework */,
+				07A302C61991EB0500A7380F /* UIKit.framework */,
+				07A302E11991EB0500A7380F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07A302C81991EB0500A7380F /* ClockRotationGesture */ = {
+			isa = PBXGroup;
+			children = (
+				07A302D11991EB0500A7380F /* NTAppDelegate.h */,
+				07A302D21991EB0500A7380F /* NTAppDelegate.m */,
+				07A302D41991EB0500A7380F /* Main.storyboard */,
+				07A302D71991EB0500A7380F /* NTViewController.h */,
+				07A302D81991EB0500A7380F /* NTViewController.m */,
+				07A302DA1991EB0500A7380F /* Images.xcassets */,
+				07A302C91991EB0500A7380F /* Supporting Files */,
+			);
+			path = ClockRotationGesture;
+			sourceTree = "<group>";
+		};
+		07A302C91991EB0500A7380F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07A302CA1991EB0500A7380F /* ClockRotationGesture-Info.plist */,
+				07A302CB1991EB0500A7380F /* InfoPlist.strings */,
+				07A302CE1991EB0500A7380F /* main.m */,
+				07A302D01991EB0500A7380F /* ClockRotationGesture-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07A302E71991EB0500A7380F /* ClockRotationGestureTests */ = {
+			isa = PBXGroup;
+			children = (
+				07A302ED1991EB0500A7380F /* ClockRotationGestureTests.m */,
+				07A302E81991EB0500A7380F /* Supporting Files */,
+			);
+			path = ClockRotationGestureTests;
+			sourceTree = "<group>";
+		};
+		07A302E81991EB0500A7380F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07A302E91991EB0500A7380F /* ClockRotationGestureTests-Info.plist */,
+				07A302EA1991EB0500A7380F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07A302BE1991EB0500A7380F /* ClockRotationGesture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07A302F11991EB0500A7380F /* Build configuration list for PBXNativeTarget "ClockRotationGesture" */;
+			buildPhases = (
+				07A302BB1991EB0500A7380F /* Sources */,
+				07A302BC1991EB0500A7380F /* Frameworks */,
+				07A302BD1991EB0500A7380F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClockRotationGesture;
+			productName = ClockRotationGesture;
+			productReference = 07A302BF1991EB0500A7380F /* ClockRotationGesture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07A302DF1991EB0500A7380F /* ClockRotationGestureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07A302F41991EB0500A7380F /* Build configuration list for PBXNativeTarget "ClockRotationGestureTests" */;
+			buildPhases = (
+				07A302DC1991EB0500A7380F /* Sources */,
+				07A302DD1991EB0500A7380F /* Frameworks */,
+				07A302DE1991EB0500A7380F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07A302E61991EB0500A7380F /* PBXTargetDependency */,
+			);
+			name = ClockRotationGestureTests;
+			productName = ClockRotationGestureTests;
+			productReference = 07A302E01991EB0500A7380F /* ClockRotationGestureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07A302B71991EB0500A7380F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "ビザンコムマック０９";
+				TargetAttributes = {
+					07A302DF1991EB0500A7380F = {
+						TestTargetID = 07A302BE1991EB0500A7380F;
+					};
+				};
+			};
+			buildConfigurationList = 07A302BA1991EB0500A7380F /* Build configuration list for PBXProject "ClockRotationGesture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07A302B61991EB0500A7380F;
+			productRefGroup = 07A302C01991EB0500A7380F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07A302BE1991EB0500A7380F /* ClockRotationGesture */,
+				07A302DF1991EB0500A7380F /* ClockRotationGestureTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07A302BD1991EB0500A7380F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A302DB1991EB0500A7380F /* Images.xcassets in Resources */,
+				07A302CD1991EB0500A7380F /* InfoPlist.strings in Resources */,
+				07A302D61991EB0500A7380F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07A302DE1991EB0500A7380F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A302EC1991EB0500A7380F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07A302BB1991EB0500A7380F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A302D91991EB0500A7380F /* NTViewController.m in Sources */,
+				07A302D31991EB0500A7380F /* NTAppDelegate.m in Sources */,
+				07A302CF1991EB0500A7380F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07A302DC1991EB0500A7380F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A302EE1991EB0500A7380F /* ClockRotationGestureTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07A302E61991EB0500A7380F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07A302BE1991EB0500A7380F /* ClockRotationGesture */;
+			targetProxy = 07A302E51991EB0500A7380F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07A302CB1991EB0500A7380F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07A302CC1991EB0500A7380F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		07A302D41991EB0500A7380F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07A302D51991EB0500A7380F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07A302EA1991EB0500A7380F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07A302EB1991EB0500A7380F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07A302EF1991EB0500A7380F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		07A302F01991EB0500A7380F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07A302F21991EB0500A7380F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClockRotationGesture/ClockRotationGesture-Prefix.pch";
+				INFOPLIST_FILE = "ClockRotationGesture/ClockRotationGesture-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		07A302F31991EB0500A7380F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClockRotationGesture/ClockRotationGesture-Prefix.pch";
+				INFOPLIST_FILE = "ClockRotationGesture/ClockRotationGesture-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		07A302F51991EB0500A7380F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ClockRotationGesture.app/ClockRotationGesture";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClockRotationGesture/ClockRotationGesture-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ClockRotationGestureTests/ClockRotationGestureTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		07A302F61991EB0500A7380F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ClockRotationGesture.app/ClockRotationGesture";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClockRotationGesture/ClockRotationGesture-Prefix.pch";
+				INFOPLIST_FILE = "ClockRotationGestureTests/ClockRotationGestureTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07A302BA1991EB0500A7380F /* Build configuration list for PBXProject "ClockRotationGesture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A302EF1991EB0500A7380F /* Debug */,
+				07A302F01991EB0500A7380F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07A302F11991EB0500A7380F /* Build configuration list for PBXNativeTarget "ClockRotationGesture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A302F21991EB0500A7380F /* Debug */,
+				07A302F31991EB0500A7380F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07A302F41991EB0500A7380F /* Build configuration list for PBXNativeTarget "ClockRotationGestureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A302F51991EB0500A7380F /* Debug */,
+				07A302F61991EB0500A7380F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07A302B71991EB0500A7380F /* Project object */;
+}
