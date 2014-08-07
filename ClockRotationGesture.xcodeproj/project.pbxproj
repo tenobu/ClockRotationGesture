@@ -24,6 +24,15 @@
 		07A302F91991EB7D00A7380F /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A302F71991EB7D00A7380F /* Button.png */; };
 		07A302FA1991EB7D00A7380F /* Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A302F81991EB7D00A7380F /* Button@2x.png */; };
 		07A302FD1991EBE400A7380F /* NTClockGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A302FC1991EBE400A7380F /* NTClockGestureRecognizer.m */; };
+		07A302FF1993436900A7380F /* NTClockSettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A302FE1993436900A7380F /* NTClockSettingView.xib */; };
+		07A30308199344D800A7380F /* Enn_Full.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A30301199344D800A7380F /* Enn_Full.png */; };
+		07A30309199344D800A7380F /* Enn_Full_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A30302199344D800A7380F /* Enn_Full_2.png */; };
+		07A3030A199344D800A7380F /* Enn_Half.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A30303199344D800A7380F /* Enn_Half.png */; };
+		07A3030B199344D800A7380F /* Enn_Half_Hour.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A30304199344D800A7380F /* Enn_Half_Hour.png */; };
+		07A3030C199344D800A7380F /* Enn_Half_Minute.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A30305199344D800A7380F /* Enn_Half_Minute.png */; };
+		07A3030D199344D800A7380F /* untitled.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A30306199344D800A7380F /* untitled.png */; };
+		07A3030E199344D800A7380F /* untitled2.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A30307199344D800A7380F /* untitled2.png */; };
+		07A303111993459F00A7380F /* NTClockSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A303101993459F00A7380F /* NTClockSettingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +69,16 @@
 		07A302F81991EB7D00A7380F /* Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button@2x.png"; sourceTree = "<group>"; };
 		07A302FB1991EBE400A7380F /* NTClockGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTClockGestureRecognizer.h; sourceTree = "<group>"; };
 		07A302FC1991EBE400A7380F /* NTClockGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTClockGestureRecognizer.m; sourceTree = "<group>"; };
+		07A302FE1993436900A7380F /* NTClockSettingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NTClockSettingView.xib; sourceTree = "<group>"; };
+		07A30301199344D800A7380F /* Enn_Full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Enn_Full.png; sourceTree = "<group>"; };
+		07A30302199344D800A7380F /* Enn_Full_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Enn_Full_2.png; sourceTree = "<group>"; };
+		07A30303199344D800A7380F /* Enn_Half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Enn_Half.png; sourceTree = "<group>"; };
+		07A30304199344D800A7380F /* Enn_Half_Hour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Enn_Half_Hour.png; sourceTree = "<group>"; };
+		07A30305199344D800A7380F /* Enn_Half_Minute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Enn_Half_Minute.png; sourceTree = "<group>"; };
+		07A30306199344D800A7380F /* untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = untitled.png; sourceTree = "<group>"; };
+		07A30307199344D800A7380F /* untitled2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = untitled2.png; sourceTree = "<group>"; };
+		07A3030F1993459F00A7380F /* NTClockSettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTClockSettingView.h; sourceTree = "<group>"; };
+		07A303101993459F00A7380F /* NTClockSettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTClockSettingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +139,9 @@
 			isa = PBXGroup;
 			children = (
 				07A302D41991EB0500A7380F /* Main.storyboard */,
+				07A302FE1993436900A7380F /* NTClockSettingView.xib */,
+				07A3030F1993459F00A7380F /* NTClockSettingView.h */,
+				07A303101993459F00A7380F /* NTClockSettingView.m */,
 				07A302D11991EB0500A7380F /* NTAppDelegate.h */,
 				07A302D21991EB0500A7380F /* NTAppDelegate.m */,
 				07A302D71991EB0500A7380F /* NTViewController.h */,
@@ -129,6 +151,7 @@
 				07A302DA1991EB0500A7380F /* Images.xcassets */,
 				07A302F71991EB7D00A7380F /* Button.png */,
 				07A302F81991EB7D00A7380F /* Button@2x.png */,
+				07A30300199344D800A7380F /* Images */,
 				07A302C91991EB0500A7380F /* Supporting Files */,
 			);
 			path = ClockRotationGesture;
@@ -161,6 +184,20 @@
 				07A302EA1991EB0500A7380F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07A30300199344D800A7380F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				07A30301199344D800A7380F /* Enn_Full.png */,
+				07A30302199344D800A7380F /* Enn_Full_2.png */,
+				07A30303199344D800A7380F /* Enn_Half.png */,
+				07A30304199344D800A7380F /* Enn_Half_Hour.png */,
+				07A30305199344D800A7380F /* Enn_Half_Minute.png */,
+				07A30306199344D800A7380F /* untitled.png */,
+				07A30307199344D800A7380F /* untitled2.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,10 +277,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A3030D199344D800A7380F /* untitled.png in Resources */,
+				07A3030B199344D800A7380F /* Enn_Half_Hour.png in Resources */,
 				07A302DB1991EB0500A7380F /* Images.xcassets in Resources */,
+				07A3030C199344D800A7380F /* Enn_Half_Minute.png in Resources */,
+				07A3030E199344D800A7380F /* untitled2.png in Resources */,
+				07A3030A199344D800A7380F /* Enn_Half.png in Resources */,
+				07A30308199344D800A7380F /* Enn_Full.png in Resources */,
 				07A302FA1991EB7D00A7380F /* Button@2x.png in Resources */,
 				07A302F91991EB7D00A7380F /* Button.png in Resources */,
 				07A302CD1991EB0500A7380F /* InfoPlist.strings in Resources */,
+				07A30309199344D800A7380F /* Enn_Full_2.png in Resources */,
+				07A302FF1993436900A7380F /* NTClockSettingView.xib in Resources */,
 				07A302D61991EB0500A7380F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +311,7 @@
 				07A302D91991EB0500A7380F /* NTViewController.m in Sources */,
 				07A302D31991EB0500A7380F /* NTAppDelegate.m in Sources */,
 				07A302FD1991EBE400A7380F /* NTClockGestureRecognizer.m in Sources */,
+				07A303111993459F00A7380F /* NTClockSettingView.m in Sources */,
 				07A302CF1991EB0500A7380F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
