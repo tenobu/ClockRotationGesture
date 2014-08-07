@@ -21,6 +21,9 @@
 		07A302E41991EB0500A7380F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A302C61991EB0500A7380F /* UIKit.framework */; };
 		07A302EC1991EB0500A7380F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07A302EA1991EB0500A7380F /* InfoPlist.strings */; };
 		07A302EE1991EB0500A7380F /* ClockRotationGestureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A302ED1991EB0500A7380F /* ClockRotationGestureTests.m */; };
+		07A302F91991EB7D00A7380F /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A302F71991EB7D00A7380F /* Button.png */; };
+		07A302FA1991EB7D00A7380F /* Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A302F81991EB7D00A7380F /* Button@2x.png */; };
+		07A302FD1991EBE400A7380F /* NTClockGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A302FC1991EBE400A7380F /* NTClockGestureRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		07A302E91991EB0500A7380F /* ClockRotationGestureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClockRotationGestureTests-Info.plist"; sourceTree = "<group>"; };
 		07A302EB1991EB0500A7380F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		07A302ED1991EB0500A7380F /* ClockRotationGestureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockRotationGestureTests.m; sourceTree = "<group>"; };
+		07A302F71991EB7D00A7380F /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
+		07A302F81991EB7D00A7380F /* Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button@2x.png"; sourceTree = "<group>"; };
+		07A302FB1991EBE400A7380F /* NTClockGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTClockGestureRecognizer.h; sourceTree = "<group>"; };
+		07A302FC1991EBE400A7380F /* NTClockGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTClockGestureRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +119,16 @@
 		07A302C81991EB0500A7380F /* ClockRotationGesture */ = {
 			isa = PBXGroup;
 			children = (
+				07A302D41991EB0500A7380F /* Main.storyboard */,
 				07A302D11991EB0500A7380F /* NTAppDelegate.h */,
 				07A302D21991EB0500A7380F /* NTAppDelegate.m */,
-				07A302D41991EB0500A7380F /* Main.storyboard */,
 				07A302D71991EB0500A7380F /* NTViewController.h */,
 				07A302D81991EB0500A7380F /* NTViewController.m */,
+				07A302FB1991EBE400A7380F /* NTClockGestureRecognizer.h */,
+				07A302FC1991EBE400A7380F /* NTClockGestureRecognizer.m */,
 				07A302DA1991EB0500A7380F /* Images.xcassets */,
+				07A302F71991EB7D00A7380F /* Button.png */,
+				07A302F81991EB7D00A7380F /* Button@2x.png */,
 				07A302C91991EB0500A7380F /* Supporting Files */,
 			);
 			path = ClockRotationGesture;
@@ -230,6 +241,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				07A302DB1991EB0500A7380F /* Images.xcassets in Resources */,
+				07A302FA1991EB7D00A7380F /* Button@2x.png in Resources */,
+				07A302F91991EB7D00A7380F /* Button.png in Resources */,
 				07A302CD1991EB0500A7380F /* InfoPlist.strings in Resources */,
 				07A302D61991EB0500A7380F /* Main.storyboard in Resources */,
 			);
@@ -252,6 +265,7 @@
 			files = (
 				07A302D91991EB0500A7380F /* NTViewController.m in Sources */,
 				07A302D31991EB0500A7380F /* NTAppDelegate.m in Sources */,
+				07A302FD1991EBE400A7380F /* NTClockGestureRecognizer.m in Sources */,
 				07A302CF1991EB0500A7380F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
