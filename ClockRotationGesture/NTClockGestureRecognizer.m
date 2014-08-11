@@ -37,7 +37,7 @@ CGFloat distanceBetweenPoints( CGPoint point1, CGPoint point2 )
     CGFloat dx = point1.x - point2.x;
     CGFloat dy = point1.y - point2.y;
     
-	return sqrt(dx*dx + dy*dy);
+	return sqrt( dx * dx + dy * dy );
 
 }
 
@@ -75,7 +75,7 @@ CGFloat angleBetweenLinesInDegrees( CGPoint beginLineA,
 		   withEvent: (UIEvent *)event
 {
 
-    [super touchesBegan:touches withEvent:event];
+    [super touchesBegan: touches withEvent: event];
 	
     if ([touches count] != 1)
     {
@@ -117,6 +117,8 @@ CGFloat angleBetweenLinesInDegrees( CGPoint beginLineA,
 		
         // sum up single steps
         cumulatedAngle += angle;
+
+		NSLog( @"%@", [NSString stringWithFormat: @"%f", cumulatedAngle] );
 		
         // call delegate
         if ([target respondsToSelector: @selector(rotation:)])
@@ -144,7 +146,7 @@ CGFloat angleBetweenLinesInDegrees( CGPoint beginLineA,
 		
         if ([target respondsToSelector: @selector(finalAngle:)])
         {
-            [target finalAngle:cumulatedAngle];
+            [target finalAngle: cumulatedAngle];
         }
     }
     else
@@ -160,9 +162,10 @@ CGFloat angleBetweenLinesInDegrees( CGPoint beginLineA,
 			   withEvent: (UIEvent *)event
 {
     
-	[super touchesCancelled:touches withEvent:event];
+	[super touchesCancelled: touches withEvent: event];
 	
     self.state = UIGestureRecognizerStateFailed;
+	
     cumulatedAngle = 0;
 
 }

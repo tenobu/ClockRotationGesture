@@ -13,8 +13,8 @@
 
 @optional
 
-- (void) rotation: (CGFloat) angle;
-- (void) finalAngle: (CGFloat) angle;
+- (void) hourRotation  : (CGFloat) angle;
+- (void) minuteRotation: (CGFloat) angle;
 
 @end
 

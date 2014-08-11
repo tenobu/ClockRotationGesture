@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NTClockSettingView : UIView
+#include "NTClockGestureRecognizer.h"
+
+@interface NTClockSettingView : UIView < NTClockGestureRecognizerDelegate >
+
+@property (weak, nonatomic) IBOutlet UIImageView *hour_ImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *minute_ImageView;
+
+@property NSString *timeString;
 
 @end

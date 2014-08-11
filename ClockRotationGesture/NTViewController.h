@@ -8,11 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#import "NTClockGestureRecognizer.h"
-
-@interface NTViewController : UIViewController < NTClockGestureRecognizerDelegate >
-
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UILabel *label;
+@interface NTViewController : UIViewController
 
 @end
