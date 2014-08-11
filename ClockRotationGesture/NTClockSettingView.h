@@ -12,8 +12,7 @@
 
 @interface NTClockSettingView : UIView < NTClockGestureRecognizerDelegate >
 
-@property (weak, nonatomic) IBOutlet UIImageView *hour_ImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *minute_ImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @property NSString *timeString;
 

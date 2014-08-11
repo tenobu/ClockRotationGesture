@@ -14,17 +14,12 @@
                     <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Button.png" id="9IM-Lv-UbQ">
-                    <rect key="frame" x="29" y="32" width="140" height="140"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="hour_ImageView" destination="9IM-Lv-UbQ" id="pep-4K-ZUi"/>
-                <outlet property="minute_ImageView" destination="huc-5h-Du4" id="6F8-Z5-T9Q"/>
+                <outlet property="imageView" destination="huc-5h-Du4" id="KVY-9a-h4w"/>
             </connections>
         </view>
     </objects>

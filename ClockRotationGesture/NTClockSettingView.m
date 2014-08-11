@@ -11,8 +11,8 @@
 @interface NTClockSettingView ()
 {
 	
-@private CGFloat hour_ImageAngle, minute_ImageAngle;
-@private NTClockGestureRecognizer *hour_GestureRecognizer, *minute_GestureRecognizer;
+@private CGFloat imageAngle;
+@private NTClockGestureRecognizer *gestureRecognizer;
 
 }
 
@@ -52,20 +52,14 @@
 			
 			NSArray *array = [subview subviews];
 			
-			self.hour_ImageView   = [array objectAtIndex: 0];
-			self.minute_ImageView = [array objectAtIndex: 1];
+			self.imageView   = [array objectAtIndex: 0];
 			
-			hour_ImageAngle = minute_ImageAngle = 0;
+			imageAngle = 0;
 			
-			hour_GestureRecognizer = [[NTClockGestureRecognizer alloc] initWithRect: self.hour_ImageView.frame
-																			 target: self];
+			gestureRecognizer = [[NTClockGestureRecognizer alloc] initWithRect: self.imageView.frame
+																		target: self];
 			
-			[self addGestureRecognizer: hour_GestureRecognizer];
-			
-			minute_GestureRecognizer = [[NTClockGestureRecognizer alloc] initWithRect: self.minute_ImageView.frame
-																			   target: self];
-			
-			[self addGestureRecognizer: minute_GestureRecognizer];
+			[self addGestureRecognizer: gestureRecognizer];
 
 		}
 		
@@ -75,33 +69,22 @@
 	
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
-
 - (void) rotation: (CGFloat) angle
 {
     
-	// calculate rotation angle
-    hour_ImageAngle += angle;
+    imageAngle += angle;
     
-	if (hour_ImageAngle > 360) {
+	if (imageAngle > 360) {
     
-		hour_ImageAngle -= 360;
+		imageAngle -= 360;
     
-	} else if (hour_ImageAngle < -360) {
+	} else if (imageAngle < -360) {
     
-		hour_ImageAngle += 360;
+		imageAngle += 360;
     
 	}
 	
-    // rotate image and update text field
-    self.hour_ImageView.transform = CGAffineTransformMakeRotation( hour_ImageAngle *  M_PI / 180 );
+    self.imageView.transform = CGAffineTransformMakeRotation( imageAngle *  M_PI / 180 );
 
 }
 

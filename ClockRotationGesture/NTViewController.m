@@ -10,10 +10,12 @@
 
 @implementation NTViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithNibName: (NSString *)nibNameOrNil
+			   bundle: (NSBundle *)nibBundleOrNil
 {
     
-	if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]))
+	if ((self = [super initWithNibName: nibNameOrNil
+								bundle: nibBundleOrNil]))
     {
         // Custom initialization
     

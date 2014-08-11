@@ -52,11 +52,11 @@ CGFloat angleBetweenLinesInDegrees( CGPoint beginLineA,
     CGFloat c = endLineB.x - beginLineB.x;
     CGFloat d = endLineB.y - beginLineB.y;
 	
-    CGFloat atanA = atan2(a, b);
-    CGFloat atanB = atan2(c, d);
+    CGFloat atanA = atan2( a, b );
+    CGFloat atanB = atan2( c, d );
 	
     // convert radiants to degrees
-    return (atanA - atanB) * 180 / M_PI;
+    return ( atanA - atanB ) * 180 / M_PI;
 
 }
 
