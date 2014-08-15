@@ -1,29 +1,29 @@
 //
-//  NTClockSettingView.m
+//  NTClockPartView.m
 //  ClockRotationGesture
 //
-//  Created by ビザンコムマック０９ on 2014/08/07.
+//  Created by ビザンコムマック０９ on 2014/08/11.
 //  Copyright (c) 2014年 ビザンコムマック０９. All rights reserved.
 //
 
-#import "NTClockSettingView.h"
+#import "NTClockPartView.h"
 
-@interface NTClockSettingView ()
+@interface NTClockPartView ()
 {
 	
 @private CGFloat imageAngle;
 @private NTClockGestureRecognizer *gestureRecognizer;
-
+	
 }
 
 @end
 
-@implementation NTClockSettingView
+@implementation NTClockPartView
 
 - (id)initWithFrame: (CGRect)frame
 {
     
-	self = [super initWithFrame: frame];
+	self = [super initWithFrame:frame];
 	
     if (self) {
 		
@@ -60,7 +60,7 @@
 																		target: self];
 			
 			[self addGestureRecognizer: gestureRecognizer];
-
+			
 		}
 		
 	}
@@ -75,17 +75,17 @@
     imageAngle += angle;
     
 	if (imageAngle > 360) {
-    
+		
 		imageAngle -= 360;
-    
+		
 	} else if (imageAngle < -360) {
-    
+		
 		imageAngle += 360;
-    
+		
 	}
 	
     self.imageView.transform = CGAffineTransformMakeRotation( imageAngle *  M_PI / 180 );
-
+	
 }
 
 @end
