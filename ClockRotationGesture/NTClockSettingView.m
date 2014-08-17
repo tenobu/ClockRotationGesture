@@ -11,9 +11,6 @@
 @interface NTClockSettingView ()
 {
 	
-@private CGFloat imageAngle;
-@private NTClockGestureRecognizer *gestureRecognizer;
-
 }
 
 @end
@@ -52,14 +49,13 @@
 			
 			NSArray *array = [subview subviews];
 			
-			self.imageView   = [array objectAtIndex: 0];
+			self.clockPart1View   = [array objectAtIndex: 0];
+			self.clockPart2View   = [array objectAtIndex: 1];
 			
-			imageAngle = 0;
-			
-			gestureRecognizer = [[NTClockGestureRecognizer alloc] initWithRect: self.imageView.frame
+			/*gestureRecognizer = [[NTClockGestureRecognizer alloc] initWithRect: self.imageView.frame
 																		target: self];
 			
-			[self addGestureRecognizer: gestureRecognizer];
+			[self addGestureRecognizer: gestureRecognizer];*/
 
 		}
 		
@@ -69,7 +65,7 @@
 	
 }
 
-- (void) rotation: (CGFloat) angle
+/*- (void) rotation: (CGFloat) angle
 {
     
     imageAngle += angle;
@@ -86,6 +82,6 @@
 	
     self.imageView.transform = CGAffineTransformMakeRotation( imageAngle *  M_PI / 180 );
 
-}
+}*/
 
 @end

@@ -13,6 +13,6 @@
 @interface NTClockPartView : UIImageView < NTClockGestureRecognizerDelegate >
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property NSString *timeString;
+//@property NSString *timeString;
 
 @end

@@ -53,6 +53,7 @@
 			NSArray *array = [subview subviews];
 			
 			self.imageView   = [array objectAtIndex: 0];
+			self.imageView.frame = subview.frame;
 			
 			imageAngle = 0;
 			
