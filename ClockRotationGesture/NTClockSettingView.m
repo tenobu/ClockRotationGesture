@@ -57,11 +57,29 @@
 			
 			[self addGestureRecognizer: gestureRecognizer];*/
 
+			NTClockSetting *clockSetting = [[NTClockSetting alloc] init];
+			
+			clockSetting.delegate = self;
+			
 		}
 		
 	}
 	
 	return self;
+	
+}
+
+- (void)delegateAmPm:(NSInteger)_am_pm
+{
+	
+	NSLog( @"%@", [NSString stringWithFormat: @"%ld", _am_pm] );
+	
+}
+
+- (void)delegateHour:(NSInteger)_hour
+{
+	
+	NSLog( @"%@", [NSString stringWithFormat: @"%ld", _hour] );
 	
 }
 
