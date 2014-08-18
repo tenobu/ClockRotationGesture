@@ -10,5 +10,5 @@
 
 @implementation NTClockSetting
 
-- (void)de
+//- (void)de
 @end

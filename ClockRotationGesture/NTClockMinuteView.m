@@ -1,14 +1,14 @@
 //
-//  NTClockAmPmView.m
+//  NTClockMinuteView.m
 //  ClockRotationGesture
 //
 //  Created by ビザンコムマック０９ on 2014/08/17.
 //  Copyright (c) 2014年 ビザンコムマック０９. All rights reserved.
 //
 
-#import "NTClockAmPmView.h"
+#import "NTClockMinuteView.h"
 
-@interface NTClockAmPmView ()
+@interface NTClockMinuteView ()
 {
 	
 @private CGFloat imageAngle;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation NTClockAmPmView
+@implementation NTClockMinuteView
 
 - (id)initWithFrame: (CGRect)frame
 {
@@ -52,12 +52,12 @@
 			
 			NSArray *array = [subview subviews];
 			
-			self.amPm_ImageView   = [array objectAtIndex: 1];
-			self.amPm_ImageView.frame = subview.frame;
+			self.minute_ImageView   = [array objectAtIndex: 0];
+			self.minute_ImageView.frame = subview.frame;
 			
 			imageAngle = 0;
 			
-			gestureRecognizer = [[NTClockGestureRecognizer alloc] initWithRect: self.amPm_ImageView.frame
+			gestureRecognizer = [[NTClockGestureRecognizer alloc] initWithRect: self.minute_ImageView.frame
 																		target: self];
 			
 			[self addGestureRecognizer: gestureRecognizer];
@@ -85,7 +85,7 @@
 		
 	}
 	
-    self.amPm_ImageView.transform = CGAffineTransformMakeRotation( imageAngle *  M_PI / 180 );
+    self.minute_ImageView.transform = CGAffineTransformMakeRotation( imageAngle *  M_PI / 180 );
 	
 }
 

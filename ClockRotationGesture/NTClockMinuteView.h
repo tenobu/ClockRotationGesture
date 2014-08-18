@@ -1,5 +1,5 @@
 //
-//  NTClockAmPmView.h
+//  NTClockMinuteView.h
 //  ClockRotationGesture
 //
 //  Created by ビザンコムマック０９ on 2014/08/17.
@@ -10,8 +10,8 @@
 
 #import "NTClockGestureRecognizer.h"
 
-@interface NTClockAmPmView : UIView < NTClockGestureRecognizerDelegate >
+@interface NTClockMinuteView : UIView < NTClockGestureRecognizerDelegate >
 
-@property (weak, nonatomic) IBOutlet UIImageView *amPm_ImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *minute_ImageView;
 
 @end
