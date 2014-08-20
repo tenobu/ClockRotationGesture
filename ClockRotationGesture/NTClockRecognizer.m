@@ -10,29 +10,37 @@
 
 @implementation NTClockRecognizer
 
-- (id)initWithTarget: (id)_target
-{
-	
-	if ( self = [super init] ) {
-		
-		target = _target;
-		self.delegate = _target;
-		
-	}
-	
-	return self;
-	
-}
-
 - (void)amPm: (NSInteger)_integer
 {
 	
-	if ( [self.myDelegate respondsToSelector: @selector(amPm:)] ) {
-
-        [self.myDelegate amPm: _integer];
+	if ( [self.delegate respondsToSelector: @selector(amPm:)] ) {
+		
+        [self.delegate amPm: _integer];
 		
     }
+	
+}
 
+- (void)hour: (NSInteger)_integer
+{
+	
+	if ( [self.delegate respondsToSelector: @selector(hour:)] ) {
+		
+        [self.delegate hour: _integer];
+		
+    }
+	
+}
+
+- (void)minute: (NSInteger)_integer
+{
+	
+	if ( [self.delegate respondsToSelector: @selector(minute:)] ) {
+		
+        [self.delegate minute: _integer];
+		
+    }
+	
 }
 
 @end

@@ -12,22 +12,24 @@
 
 @optional
 
-- (void)amPm: (NSInteger)_angle;
+- (void)amPm  : (NSInteger)_integer;
+- (void)hour  : (NSInteger)_integer;
+- (void)minute: (NSInteger)_integer;
 
 @end
 
 @interface NTClockRecognizer : NSObject
 {
 	
-	id < NTClockRecognizerDelegate > target;
+	//id < NTClockRecognizerDelegate > target;
 	
 }
 
 @property (nonatomic, assign) id < NTClockRecognizerDelegate > delegate;
-@property (nonatomic, assign) id < NTClockRecognizerDelegate > myDelegate;
+//@property (nonatomic, assign) id < NTClockRecognizerDelegate > myDelegate;
 
-- (id)initWithTarget: (id)_target;
-
-- (void)amPm: (NSInteger)_integer;
+- (void)amPm  : (NSInteger)_integer;
+- (void)hour  : (NSInteger)_integer;
+- (void)minute: (NSInteger)_integer;
 
 @end

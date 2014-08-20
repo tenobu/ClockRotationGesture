@@ -87,6 +87,10 @@
 	
     self.minute_ImageView.transform = CGAffineTransformMakeRotation( imageAngle *  M_PI / 180 );
 	
+	self.integerMinute = imageAngle / 6;
+	
+	[self.clockRecognizer minute: self.integerMinute];
+	
 }
 
 @end

@@ -20,19 +20,6 @@
 
 @implementation NTClockAmPmView
 
-/*- (id)initWithFrame: (CGRect)frame
-{
-    
-	self = [super initWithFrame: frame];
-	
-    if (self) {
-		
-	}
-    
-	return self;
-	
-}*/
-
 - (id)initWithCoder: (NSCoder *)decoder
 {
     
@@ -42,6 +29,7 @@
 		
 		if ( ! self.subviews.count ) {
             
+			// 
 			UIView *subview = [[NSBundle mainBundle] loadNibNamed: NSStringFromClass( [self class] )
 															owner: nil
 														  options: nil] [0];
@@ -111,15 +99,11 @@
 		
 	}
 	
-	// NSLog( @"integer AM PM = %ld", self.integerAmPm );
-	
 	if ( self.integerAmPm != 0 ) {
 		
-		NSLog( @"" );
+		[self.clockRecognizer amPm: self.integerAmPm];
 		
 	}
-	
-	[self.clockRecognizer amPm: self.integerAmPm];
 	
 }
 

@@ -16,8 +16,14 @@
 @interface NTClockView ()
 {
 	
-@private NTClockRecognizer *clockRecognizer;
+@private
+	
+	NTClockRecognizer *clockRecognizer;
 		
+	NSString *stringAmPm;
+	NSString *stringHour;
+	NSString *stringMinute;
+
 }
 
 @end
@@ -60,9 +66,9 @@
 			self.minuteView = [array objectAtIndex: 1];
 			self.hourView   = [array objectAtIndex: 2];
 			
-			clockRecognizer = [[NTClockRecognizer alloc] initWithTarget: self];
+			clockRecognizer = [[NTClockRecognizer alloc] init];
 
-			clockRecognizer.myDelegate = self;
+			clockRecognizer.delegate = self;
 			
 			self.amPmView.clockRecognizer   = clockRecognizer;
 			self.minuteView.clockRecognizer = clockRecognizer;
@@ -80,15 +86,37 @@
 {
 	
 	NSLog( @"AM PM = %ld", _integer );
-
-	NSString *_am_pm = @"AM";
+	
+	stringAmPm = @"AM";
 	if ( _integer == 2 ) {
 		
-		_am_pm = @"PM";
-
+		stringAmPm = @"PM";
+		
 	}
 	
-	self.stringTime =
+	self.stringTime = [NSString stringWithFormat: @"%@%@:%@", stringAmPm, stringHour, stringMinute];
+	
+}
+
+- (void)hour: (NSInteger)_integer
+{
+	
+	NSLog( @"Hour = %ld", _integer );
+	
+	stringHour = [NSString stringWithFormat: @"%ld", _integer];
+	
+	self.stringTime = [NSString stringWithFormat: @"%@%@:%@", stringAmPm, stringHour, stringMinute];
+	
+}
+
+- (void)minute:(NSInteger)_integer
+{
+	
+	NSLog( @"Minute = %ld", _integer );
+	
+	stringMinute = [NSString stringWithFormat: @"%ld", _integer];
+	
+	self.stringTime = [NSString stringWithFormat: @"%@%@:%@", stringAmPm, stringHour, stringMinute];
 	
 }
 

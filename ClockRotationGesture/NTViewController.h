@@ -10,4 +10,6 @@
 
 @interface NTViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *label_StartTime;
+
 @end
