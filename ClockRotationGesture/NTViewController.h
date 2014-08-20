@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NTViewController : UIViewController
+#import "NTClockString.h"
+#import "NTClockView.h"
+
+@interface NTViewController : UIViewController < NTClockStringDelegate >
 
 @property (weak, nonatomic) IBOutlet UILabel *label_StartTime;
+@property (weak, nonatomic) IBOutlet NTClockView *clock_StartTime;
 
 @end

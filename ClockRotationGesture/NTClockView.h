@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet NTClockMinuteView *minuteView;
 @property (weak, nonatomic) IBOutlet NTClockHourView   *hourView;
 
+@property NTClockString *clockString;
 @property NSString *stringTime;
 
 @end

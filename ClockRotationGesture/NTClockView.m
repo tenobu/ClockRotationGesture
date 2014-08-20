@@ -93,8 +93,8 @@
 		stringAmPm = @"PM";
 		
 	}
-	
-	self.stringTime = [NSString stringWithFormat: @"%@%@:%@", stringAmPm, stringHour, stringMinute];
+
+	[self time];
 	
 }
 
@@ -105,7 +105,7 @@
 	
 	stringHour = [NSString stringWithFormat: @"%ld", _integer];
 	
-	self.stringTime = [NSString stringWithFormat: @"%@%@:%@", stringAmPm, stringHour, stringMinute];
+	[self time];
 	
 }
 
@@ -115,6 +115,13 @@
 	NSLog( @"Minute = %ld", _integer );
 	
 	stringMinute = [NSString stringWithFormat: @"%ld", _integer];
+	
+	[self time];
+	
+}
+
+- (void)time
+{
 	
 	self.stringTime = [NSString stringWithFormat: @"%@%@:%@", stringAmPm, stringHour, stringMinute];
 	

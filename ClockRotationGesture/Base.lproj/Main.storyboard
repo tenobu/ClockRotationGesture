@@ -28,6 +28,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="clock_StartTime" destination="Jwc-OV-y5L" id="5zF-YC-Stq"/>
                         <outlet property="label_StartTime" destination="gQe-Nd-Uyk" id="kUV-Ja-Td0"/>
                     </connections>
                 </viewController>
