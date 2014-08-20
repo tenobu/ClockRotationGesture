@@ -31,6 +31,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="amPmView" destination="dBo-DP-rsr" id="7hh-GV-OGE"/>
+                <outlet property="hourView" destination="lml-Uw-fN1" id="44K-gO-fYW"/>
                 <outlet property="minuteView" destination="EgT-WY-iWF" id="ytT-sx-6QD"/>
             </connections>
         </view>

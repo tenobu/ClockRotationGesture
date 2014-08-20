@@ -20,7 +20,7 @@
 
 @implementation NTClockAmPmView
 
-- (id)initWithFrame: (CGRect)frame
+/*- (id)initWithFrame: (CGRect)frame
 {
     
 	self = [super initWithFrame: frame];
@@ -31,7 +31,7 @@
     
 	return self;
 	
-}
+}*/
 
 - (id)initWithCoder: (NSCoder *)decoder
 {
@@ -85,7 +85,41 @@
 		
 	}
 	
+	if ( imageAngle < -25 ) {
+		
+		imageAngle = -25;
+		
+	} else if ( imageAngle > 27 ) {
+		
+		imageAngle = 27;
+		
+	}
+	
     self.amPm_ImageView.transform = CGAffineTransformMakeRotation( imageAngle *  M_PI / 180 );
+
+	if ( imageAngle >= -25 && imageAngle < -20 ) {
+		
+		self.integerAmPm = 2;
+		
+	} else if ( imageAngle <= 27 && imageAngle > 20 ) {
+		
+		self.integerAmPm = 1;
+		
+	} else {
+		
+		self.integerAmPm = 0;
+		
+	}
+	
+	// NSLog( @"integer AM PM = %ld", self.integerAmPm );
+	
+	if ( self.integerAmPm != 0 ) {
+		
+		NSLog( @"" );
+		
+	}
+	
+	[self.clockRecognizer amPm: self.integerAmPm];
 	
 }
 

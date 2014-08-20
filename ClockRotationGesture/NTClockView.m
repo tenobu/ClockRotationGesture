@@ -8,6 +8,20 @@
 
 #import "NTClockView.h"
 
+#import "NTClockAmPmView.h"
+#import "NTClockHourView.h"
+#import "NTClockMinuteView.h"
+#import "NTClockRecognizer.h"
+
+@interface NTClockView ()
+{
+	
+@private NTClockRecognizer *clockRecognizer;
+		
+}
+
+@end
+
 @implementation NTClockView
 
 - (id)initWithFrame: (CGRect)frame
@@ -44,12 +58,37 @@
 			
 			self.amPmView   = [array objectAtIndex: 0];
 			self.minuteView = [array objectAtIndex: 1];
-						
+			self.hourView   = [array objectAtIndex: 2];
+			
+			clockRecognizer = [[NTClockRecognizer alloc] initWithTarget: self];
+
+			clockRecognizer.myDelegate = self;
+			
+			self.amPmView.clockRecognizer   = clockRecognizer;
+			self.minuteView.clockRecognizer = clockRecognizer;
+			self.hourView.clockRecognizer   = clockRecognizer;
+			
 		}
 		
 	}
 	
 	return self;
+	
+}
+
+- (void)amPm: (NSInteger)_integer
+{
+	
+	NSLog( @"AM PM = %ld", _integer );
+
+	NSString *_am_pm = @"AM";
+	if ( _integer == 2 ) {
+		
+		_am_pm = @"PM";
+
+	}
+	
+	self.stringTime =
 	
 }
 

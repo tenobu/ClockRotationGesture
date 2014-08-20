@@ -9,9 +9,13 @@
 #import <UIKit/UIKit.h>
 
 #import "NTClockGestureRecognizer.h"
+#import "NTClockRecognizer.h"
 
 @interface NTClockHourView : UIView < NTClockGestureRecognizerDelegate >
 
 @property (weak, nonatomic) IBOutlet UIImageView *hour_ImageView;
+
+@property NTClockRecognizer *clockRecognizer;
+@property NSInteger integerHour;
 
 @end

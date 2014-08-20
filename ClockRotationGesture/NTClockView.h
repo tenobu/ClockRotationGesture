@@ -8,12 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+#import "NTClockRecognizer.h"
+
 @class NTClockAmPmView;
 @class NTClockMinuteView;
+@class NTClockHourView;
 
-@interface NTClockView : UIView
+@interface NTClockView : UIView < NTClockRecognizerDelegate >
 
 @property (weak, nonatomic) IBOutlet NTClockAmPmView   *amPmView;
 @property (weak, nonatomic) IBOutlet NTClockMinuteView *minuteView;
+@property (weak, nonatomic) IBOutlet NTClockHourView   *hourView;
+
+@property NSString *stringTime;
 
 @end
