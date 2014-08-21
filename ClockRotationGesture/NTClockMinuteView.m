@@ -79,7 +79,7 @@
 		
 		imageAngle -= 360;
 		
-	} else if (imageAngle < -360) {
+	} else if (imageAngle < 0) {
 		
 		imageAngle += 360;
 		

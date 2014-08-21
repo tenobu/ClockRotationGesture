@@ -40,7 +40,7 @@
 			
 			NSArray *array = [subview subviews];
 			
-			self.amPm_ImageView   = [array objectAtIndex: 1];
+			self.amPm_ImageView = [array objectAtIndex: 1];
 			self.amPm_ImageView.frame = subview.frame;
 			
 			imageAngle = 0;

@@ -19,6 +19,9 @@
 @interface NTClockString : NSObject
 
 @property (nonatomic, assign) id < NTClockStringDelegate > delegate;
+//@property NSString *timeString;
+
+- (void)setTimeString: (NSString *)_string;
 
 - (void)time: (NSString *)_string;
 

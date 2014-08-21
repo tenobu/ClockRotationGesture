@@ -12,6 +12,7 @@
 #import "NTClockHourView.h"
 #import "NTClockMinuteView.h"
 #import "NTClockRecognizer.h"
+#import "NTClockString.h"
 
 @interface NTClockView ()
 {
@@ -85,7 +86,7 @@
 - (void)amPm: (NSInteger)_integer
 {
 	
-	NSLog( @"AM PM = %ld", _integer );
+	// NSLog( @"AM PM = %ld", _integer );
 	
 	stringAmPm = @"AM";
 	if ( _integer == 2 ) {
@@ -101,9 +102,9 @@
 - (void)hour: (NSInteger)_integer
 {
 	
-	NSLog( @"Hour = %ld", _integer );
+	// NSLog( @"Hour = %02ld", _integer );
 	
-	stringHour = [NSString stringWithFormat: @"%ld", _integer];
+	stringHour = [NSString stringWithFormat: @"%02ld", _integer];
 	
 	[self time];
 	
@@ -112,9 +113,9 @@
 - (void)minute:(NSInteger)_integer
 {
 	
-	NSLog( @"Minute = %ld", _integer );
+	// NSLog( @"Minute = %02ld", _integer );
 	
-	stringMinute = [NSString stringWithFormat: @"%ld", _integer];
+	stringMinute = [NSString stringWithFormat: @"%02ld", _integer];
 	
 	[self time];
 	
@@ -123,7 +124,11 @@
 - (void)time
 {
 	
-	self.stringTime = [NSString stringWithFormat: @"%@%@:%@", stringAmPm, stringHour, stringMinute];
+	self.stringTime = [NSString stringWithFormat: @"%@ %@:%@", stringAmPm, stringHour, stringMinute];
+
+	// NSLog( @"Time = %@", self.stringTime );
+	
+	[self.clockString time: self.stringTime];
 	
 }
 

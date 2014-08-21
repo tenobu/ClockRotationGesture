@@ -10,6 +10,20 @@
 
 @implementation NTClockString
 
+- (void)setTimeString:(NSString *)_string
+{
+
+	//self.timeString = _timeString;
+	
+}
+
+/*- (NSString *)timeString
+{
+
+	return self.timeString;
+	
+}*/
+
 - (void)time: (NSString *)_string
 {
 	

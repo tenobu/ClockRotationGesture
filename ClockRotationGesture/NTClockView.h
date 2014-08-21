@@ -13,6 +13,7 @@
 @class NTClockAmPmView;
 @class NTClockMinuteView;
 @class NTClockHourView;
+@class NTClockString;
 
 @interface NTClockView : UIView < NTClockRecognizerDelegate >
 
